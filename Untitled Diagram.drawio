@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-19T02:56:32.756Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="R_32Ke4sHEYlKLFeepwH" version="13.8.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2020-10-19T03:05:25.849Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.80 Safari/537.36" etag="yNCPEyef6ppwRHv5BpZN" version="13.8.0" type="github" pages="2">
   <diagram name="进场消息流程图" id="SYnut7IXNEEhLyzAAUGE">
     <mxGraphModel dx="946" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -66,8 +66,10 @@
         <mxCell id="OvYP4rL0kIA_apxtOIh2-23" value="查询直播间" style="whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" parent="1" vertex="1">
           <mxGeometry x="230" y="610" width="80" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="OvYP4rL0kIA_apxtOIh2-29" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-26" target="OvYP4rL0kIA_apxtOIh2-28" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="OvYP4rL0kIA_apxtOIh2-29" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="820" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="OvYP4rL0kIA_apxtOIh2-30" value="来疯" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;" parent="OvYP4rL0kIA_apxtOIh2-29" vertex="1" connectable="0">
           <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
@@ -85,39 +87,6 @@
         <mxCell id="OvYP4rL0kIA_apxtOIh2-26" value="业务判断" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" parent="1" vertex="1">
           <mxGeometry x="230" y="685" width="80" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="OvYP4rL0kIA_apxtOIh2-32" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-28" target="OvYP4rL0kIA_apxtOIh2-31" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OvYP4rL0kIA_apxtOIh2-33" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;" parent="OvYP4rL0kIA_apxtOIh2-32" vertex="1" connectable="0">
-          <mxGeometry x="-0.2" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="OvYP4rL0kIA_apxtOIh2-40" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-28" target="OvYP4rL0kIA_apxtOIh2-39" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OvYP4rL0kIA_apxtOIh2-41" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#5C5C5C;" parent="OvYP4rL0kIA_apxtOIh2-40" vertex="1" connectable="0">
-          <mxGeometry x="-0.2615" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="OvYP4rL0kIA_apxtOIh2-28" value="是否是livehouse" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" parent="1" vertex="1">
-          <mxGeometry x="230" y="820" width="80" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="OvYP4rL0kIA_apxtOIh2-103" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-31" target="OvYP4rL0kIA_apxtOIh2-63" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="40" y="858" />
-              <mxPoint x="40" y="1970" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="OvYP4rL0kIA_apxtOIh2-31" value="删除回看，增加pv" style="whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" parent="1" vertex="1">
-          <mxGeometry x="70" y="827.5" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="OvYP4rL0kIA_apxtOIh2-34" value="这快逻辑可能没有了，待确认" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.cloud_callout;rounded=0;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" vertex="1">
-          <mxGeometry x="120" y="742.5" width="120" height="85" as="geometry" />
-        </mxCell>
         <mxCell id="OvYP4rL0kIA_apxtOIh2-43" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-39" target="OvYP4rL0kIA_apxtOIh2-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -129,13 +98,13 @@
         <mxCell id="OvYP4rL0kIA_apxtOIh2-104" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-39" target="OvYP4rL0kIA_apxtOIh2-63" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="40" y="998" />
+              <mxPoint x="40" y="858" />
               <mxPoint x="40" y="1970" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="OvYP4rL0kIA_apxtOIh2-39" value="用户是否是主播自己" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" parent="1" vertex="1">
-          <mxGeometry x="230" y="960" width="80" height="75" as="geometry" />
+          <mxGeometry x="230" y="820" width="80" height="75" as="geometry" />
         </mxCell>
         <mxCell id="OvYP4rL0kIA_apxtOIh2-47" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-42" target="OvYP4rL0kIA_apxtOIh2-46" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -149,13 +118,13 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint y="1470" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="40" y="1153" />
+              <mxPoint x="40" y="1008" />
               <mxPoint x="40" y="1970" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="OvYP4rL0kIA_apxtOIh2-42" value="是否超管" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" parent="1" vertex="1">
-          <mxGeometry x="230" y="1115" width="80" height="75" as="geometry" />
+          <mxGeometry x="230" y="970" width="80" height="75" as="geometry" />
         </mxCell>
         <mxCell id="OvYP4rL0kIA_apxtOIh2-50" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-46" target="OvYP4rL0kIA_apxtOIh2-49" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -168,13 +137,13 @@
         <mxCell id="OvYP4rL0kIA_apxtOIh2-106" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-46" target="OvYP4rL0kIA_apxtOIh2-63" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="40" y="1308" />
+              <mxPoint x="40" y="1132" />
               <mxPoint x="40" y="1970" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="OvYP4rL0kIA_apxtOIh2-46" value="是否被踢出" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" parent="1" vertex="1">
-          <mxGeometry x="230" y="1270" width="80" height="75" as="geometry" />
+          <mxGeometry x="230" y="1094" width="80" height="75" as="geometry" />
         </mxCell>
         <mxCell id="OvYP4rL0kIA_apxtOIh2-53" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-49" target="OvYP4rL0kIA_apxtOIh2-52" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -187,13 +156,13 @@
         <mxCell id="OvYP4rL0kIA_apxtOIh2-107" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-49" target="OvYP4rL0kIA_apxtOIh2-63" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="40" y="1463" />
+              <mxPoint x="40" y="1348" />
               <mxPoint x="40" y="1970" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="OvYP4rL0kIA_apxtOIh2-49" value="频度控制" style="rhombus;whiteSpace=wrap;html=1;rounded=1;fontColor=#5C5C5C;strokeColor=#006658;fillColor=#21C0A5;sketch=0;" parent="1" vertex="1">
-          <mxGeometry x="230" y="1425" width="80" height="75" as="geometry" />
+          <mxGeometry x="230" y="1310" width="80" height="75" as="geometry" />
         </mxCell>
         <mxCell id="OvYP4rL0kIA_apxtOIh2-56" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="1" source="OvYP4rL0kIA_apxtOIh2-52" target="OvYP4rL0kIA_apxtOIh2-55" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -362,7 +331,7 @@
         </mxCell>
         <mxCell id="ybFb1CHkihXT8__E3fhX-14" value="设备上线" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#006658;fontColor=#5C5C5C;" parent="ybFb1CHkihXT8__E3fhX-4" target="ybFb1CHkihXT8__E3fhX-5" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="50" y="90" as="sourcePoint" />
+            <mxPoint x="60" y="90" as="sourcePoint" />
             <mxPoint x="130" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
