@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-04T08:27:20.135Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="brCMjqtOqRIcSIaV7lDs" version="14.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-04T11:49:02.268Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="0sx6xgWE4KJUDBcQUl87" version="14.1.2" type="github">
   <diagram id="Z3dr_EnwmoZWZp5ipZ1R" name="组件投放">
     <mxGraphModel dx="932" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -53,17 +53,6 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hX_yv-9CpFlEhFa8DRAL-40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="hX_yv-9CpFlEhFa8DRAL-9">
-          <mxGeometry x="50" y="380" width="10" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="hX_yv-9CpFlEhFa8DRAL-41" value="3.2判断实例类型" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" target="hX_yv-9CpFlEhFa8DRAL-40" parent="hX_yv-9CpFlEhFa8DRAL-9">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="360" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="80" y="360" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="hX_yv-9CpFlEhFa8DRAL-12" value="数据托管" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;fillColor=#21C0A5;strokeColor=#006658;fontColor=#5C5C5C;" vertex="1" parent="rXbFMI6Ns6j8JMIazXD9-1">
           <mxGeometry x="510" y="740" width="80" height="860" as="geometry" />
         </mxCell>
@@ -107,12 +96,7 @@
             <mxPoint x="260" y="1020" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hX_yv-9CpFlEhFa8DRAL-47" value="静态组件推送到进直播间静态数据" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" target="hX_yv-9CpFlEhFa8DRAL-46" parent="rXbFMI6Ns6j8JMIazXD9-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340" y="1170" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hX_yv-9CpFlEhFa8DRAL-49" value="动态组件推送到动态组件" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="rXbFMI6Ns6j8JMIazXD9-1">
+        <mxCell id="hX_yv-9CpFlEhFa8DRAL-49" value="托管数据" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="rXbFMI6Ns6j8JMIazXD9-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="340" y="1200" as="sourcePoint" />
             <mxPoint x="545" y="1200" as="targetPoint" />
@@ -124,9 +108,9 @@
         <mxCell id="hX_yv-9CpFlEhFa8DRAL-53" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="hX_yv-9CpFlEhFa8DRAL-50">
           <mxGeometry x="35" y="490" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="hX_yv-9CpFlEhFa8DRAL-54" value="推送到消息通道直播间实时生效" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="hX_yv-9CpFlEhFa8DRAL-50" source="hX_yv-9CpFlEhFa8DRAL-9">
+        <mxCell id="hX_yv-9CpFlEhFa8DRAL-54" value="推送到消息通道直播间实时生效" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="hX_yv-9CpFlEhFa8DRAL-50">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-35" y="490" as="sourcePoint" />
+            <mxPoint x="-280" y="500" as="sourcePoint" />
             <mxPoint x="30" y="500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -138,9 +122,9 @@
             <mxPoint x="340" y="1218" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hX_yv-9CpFlEhFa8DRAL-55" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" source="hX_yv-9CpFlEhFa8DRAL-53" parent="rXbFMI6Ns6j8JMIazXD9-1" target="hX_yv-9CpFlEhFa8DRAL-9">
+        <mxCell id="hX_yv-9CpFlEhFa8DRAL-55" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" source="hX_yv-9CpFlEhFa8DRAL-53" parent="rXbFMI6Ns6j8JMIazXD9-1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="595" y="1306" as="targetPoint" />
+            <mxPoint x="350" y="1268" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hX_yv-9CpFlEhFa8DRAL-58" value="进直播间加载静态组件" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;entryX=0.6;entryY=-0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" target="hX_yv-9CpFlEhFa8DRAL-46" parent="rXbFMI6Ns6j8JMIazXD9-1" source="hX_yv-9CpFlEhFa8DRAL-13">
@@ -186,13 +170,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="hX_yv-9CpFlEhFa8DRAL-79" value="静态组件推送到进直播间静态数据" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="rXbFMI6Ns6j8JMIazXD9-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340" y="1440" as="sourcePoint" />
-            <mxPoint x="545" y="1440" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hX_yv-9CpFlEhFa8DRAL-80" value="动态组件推送到动态组件" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="rXbFMI6Ns6j8JMIazXD9-1">
+        <mxCell id="hX_yv-9CpFlEhFa8DRAL-80" value="托管数据" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="rXbFMI6Ns6j8JMIazXD9-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="340" y="1460" as="sourcePoint" />
             <mxPoint x="545" y="1460" as="targetPoint" />
