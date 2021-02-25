@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-02-25T08:22:06.711Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="oMWtf15XwT7Y2o33rBg7" version="14.2.9" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-02-25T08:26:36.788Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36" etag="kVTxzj4xCdGekUEt3zQH" version="14.2.9" type="github" pages="4">
   <diagram id="Iy33KvT-7kDo7lMHrZao" name="时序图-现状">
-    <mxGraphModel dx="932" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1384" dy="534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -219,7 +219,7 @@
         <mxCell id="g7SLGyctbLsxSmSTqNKB-68" value="查询房间组件配置-动态" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="1">
           <mxGeometry x="400" y="1720" width="140" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="g7SLGyctbLsxSmSTqNKB-72" value="进直播间" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;exitX=0.2;exitY=0.02;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="g7SLGyctbLsxSmSTqNKB-70">
+        <mxCell id="g7SLGyctbLsxSmSTqNKB-72" value="进直播间" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;exitX=0.2;exitY=-0.003;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="g7SLGyctbLsxSmSTqNKB-70">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="510" y="1770" as="sourcePoint" />
             <mxPoint x="400" y="1780" as="targetPoint" />
