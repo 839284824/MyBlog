@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-01T06:42:54.580Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="yjW4aPzhiWS0euhVG0sR" version="14.4.2" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2021-03-01T06:49:44.881Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="CnedY0v8mWz2BTDJriEz" version="14.4.2" type="github" pages="6">
   <diagram id="Iy33KvT-7kDo7lMHrZao" name="时序图-现状">
     <mxGraphModel dx="932" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -841,20 +841,20 @@
         <mxCell id="nr8jKyTAKpVjFbwfCyzD-34" value="保存场景实例" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
           <mxGeometry x="600" y="1240" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nr8jKyTAKpVjFbwfCyzD-36" value="托管场景实例数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
-          <mxGeometry x="790" y="1270" width="110" height="20" as="geometry" />
+        <mxCell id="nr8jKyTAKpVjFbwfCyzD-36" value="托管场景实例数据（带业务实例版本）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
+          <mxGeometry x="790" y="1270" width="220" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nr8jKyTAKpVjFbwfCyzD-37" value="保存场景实例数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
-          <mxGeometry x="790" y="1300" width="110" height="20" as="geometry" />
+        <mxCell id="nr8jKyTAKpVjFbwfCyzD-37" value="保存场景实例数据（带业务实例版本）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
+          <mxGeometry x="790" y="1300" width="220" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nr8jKyTAKpVjFbwfCyzD-41" value="修改场景实例" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
           <mxGeometry x="590" y="1410" width="90" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nr8jKyTAKpVjFbwfCyzD-43" value="重新托管场景实例" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
-          <mxGeometry x="790" y="1450" width="110" height="20" as="geometry" />
+        <mxCell id="nr8jKyTAKpVjFbwfCyzD-43" value="重新托管场景实例（带业务实例版本）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
+          <mxGeometry x="785" y="1450" width="220" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nr8jKyTAKpVjFbwfCyzD-44" value="更新场景实例数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
-          <mxGeometry x="790" y="1480" width="110" height="20" as="geometry" />
+        <mxCell id="nr8jKyTAKpVjFbwfCyzD-44" value="更新场景实例数据（带业务实例版本）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
+          <mxGeometry x="785" y="1480" width="220" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nr8jKyTAKpVjFbwfCyzD-46" value="获取场景挂载组件" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
           <mxGeometry x="600" y="1580" width="110" height="20" as="geometry" />
@@ -870,6 +870,12 @@
         </mxCell>
         <mxCell id="nr8jKyTAKpVjFbwfCyzD-53" value="保存场景实例数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
           <mxGeometry x="785" y="1670" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nr8jKyTAKpVjFbwfCyzD-55" value="查询业务实例版本" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
+          <mxGeometry x="600" y="1260" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nr8jKyTAKpVjFbwfCyzD-56" value="查询业务实例版本" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
+          <mxGeometry x="595" y="1430" width="110" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
