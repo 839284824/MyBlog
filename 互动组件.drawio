@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-02T03:19:10.727Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="jxID0QR1oyamhIhhtid7" version="14.4.2" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-03-02T03:19:34.956Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="kS7zxYW4AizUr0zOX11u" version="14.4.2" type="github" pages="5">
   <diagram id="Iy33KvT-7kDo7lMHrZao" name="时序图-现状">
     <mxGraphModel dx="932" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -649,7 +649,7 @@
         <mxCell id="2fA3CvtiPFZ_3KmCTe3Z-1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-17">
           <mxGeometry x="45" y="770" width="10" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="2fA3CvtiPFZ_3KmCTe3Z-5" value="数据托管" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;entryX=-0.2;entryY=0.58;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="fUD5J31Z0T4HCMbTufSv-17" target="2fA3CvtiPFZ_3KmCTe3Z-4">
+        <mxCell id="2fA3CvtiPFZ_3KmCTe3Z-5" value="实例托管" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;entryX=-0.2;entryY=0.58;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="fUD5J31Z0T4HCMbTufSv-17" target="2fA3CvtiPFZ_3KmCTe3Z-4">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="60" y="820" as="sourcePoint" />
             <mxPoint x="140" y="820" as="targetPoint" />
@@ -807,6 +807,9 @@
         </mxCell>
         <mxCell id="2fA3CvtiPFZ_3KmCTe3Z-3" value="修改投放状态" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
           <mxGeometry x="410" y="1510" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2fA3CvtiPFZ_3KmCTe3Z-6" value="重新托管实例" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
+          <mxGeometry x="800" y="1550" width="90" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
