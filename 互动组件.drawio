@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-02T02:37:32.915Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="SxlVp06YKPMT4fCFDNK4" version="14.4.2" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-03-02T02:37:57.183Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="mhK7Jzq5PcDz2Bj6EWCs" version="14.4.2" type="github" pages="5">
   <diagram id="Iy33KvT-7kDo7lMHrZao" name="时序图-现状">
     <mxGraphModel dx="932" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -740,8 +740,8 @@
         <mxCell id="nr8jKyTAKpVjFbwfCyzD-52" value="托管场景实例数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
           <mxGeometry x="785" y="1640" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="nr8jKyTAKpVjFbwfCyzD-53" value="保存场景实例数据" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
-          <mxGeometry x="785" y="1670" width="110" height="20" as="geometry" />
+        <mxCell id="nr8jKyTAKpVjFbwfCyzD-53" value="保存场景实例数据（带版本）" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
+          <mxGeometry x="790" y="1670" width="170" height="20" as="geometry" />
         </mxCell>
         <mxCell id="NVxRuR-60061xU9ByGst-0" value="互动业务" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="fUD5J31Z0T4HCMbTufSv-1">
           <mxGeometry x="530" y="740" width="100" height="690" as="geometry" />
