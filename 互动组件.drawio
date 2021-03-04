@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-04T03:54:03.277Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="bSD91XqgUbgHmdv86IaB" version="14.4.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-03-04T03:54:39.179Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="jHLJs-Xiq2MxrEt8R6Y-" version="14.4.3" type="github" pages="5">
   <diagram id="Iy33KvT-7kDo7lMHrZao" name="时序图-现状">
     <mxGraphModel dx="932" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -799,10 +799,10 @@
         <mxCell id="pR2Jg7A8279A-SpSWOsh-0" />
         <mxCell id="pR2Jg7A8279A-SpSWOsh-1" parent="pR2Jg7A8279A-SpSWOsh-0" />
         <mxCell id="GgI7jr60IePY3UhvkUQk-0" value="场景服务" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="pR2Jg7A8279A-SpSWOsh-1" vertex="1">
-          <mxGeometry x="130" y="50" width="100" height="690" as="geometry" />
+          <mxGeometry x="130" y="50" width="100" height="740" as="geometry" />
         </mxCell>
         <mxCell id="GgI7jr60IePY3UhvkUQk-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="GgI7jr60IePY3UhvkUQk-0" vertex="1">
-          <mxGeometry x="45" y="210" width="10" height="480" as="geometry" />
+          <mxGeometry x="45" y="210" width="10" height="530" as="geometry" />
         </mxCell>
         <mxCell id="GgI7jr60IePY3UhvkUQk-16" value="进入场景" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;entryX=0.1;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="GgI7jr60IePY3UhvkUQk-0" target="GgI7jr60IePY3UhvkUQk-15" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
@@ -811,10 +811,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="GgI7jr60IePY3UhvkUQk-1" value="托管服务" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="pR2Jg7A8279A-SpSWOsh-1" vertex="1">
-          <mxGeometry x="300" y="50" width="100" height="690" as="geometry" />
+          <mxGeometry x="300" y="50" width="100" height="740" as="geometry" />
         </mxCell>
         <mxCell id="GgI7jr60IePY3UhvkUQk-15" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="GgI7jr60IePY3UhvkUQk-1" vertex="1">
-          <mxGeometry x="45" y="210" width="10" height="480" as="geometry" />
+          <mxGeometry x="45" y="210" width="10" height="530" as="geometry" />
         </mxCell>
         <mxCell id="GgI7jr60IePY3UhvkUQk-18" value="拉取场景实例" style="html=1;verticalAlign=bottom;endArrow=block;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" parent="GgI7jr60IePY3UhvkUQk-1" edge="1">
           <mxGeometry width="80" relative="1" as="geometry">
@@ -888,11 +888,8 @@
             <mxPoint x="360" y="730" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="R__kZL5bwLptOCPEKLpg-14" value="返回" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="pR2Jg7A8279A-SpSWOsh-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340" y="740" as="sourcePoint" />
-            <mxPoint x="190" y="740" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="R__kZL5bwLptOCPEKLpg-15" value="更新本地场景实例" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="pR2Jg7A8279A-SpSWOsh-1">
+          <mxGeometry x="355" y="750" width="110" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
