@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-04T03:49:32.466Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="C5_ZVHWdy0wOE4QmHIlU" version="14.4.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-03-04T03:51:16.964Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="V1DNnIAz9ifFt6smegWs" version="14.4.3" type="github" pages="5">
   <diagram id="Iy33KvT-7kDo7lMHrZao" name="时序图-现状">
     <mxGraphModel dx="932" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -846,8 +846,8 @@
         <mxCell id="R__kZL5bwLptOCPEKLpg-0" value="本地场景实例不为空" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="pR2Jg7A8279A-SpSWOsh-1">
           <mxGeometry x="360" y="360" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="R__kZL5bwLptOCPEKLpg-1" value="实例ID存在于&lt;br&gt;业务场景变更实例记录中" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="pR2Jg7A8279A-SpSWOsh-1">
-          <mxGeometry x="350" y="500" width="150" height="30" as="geometry" />
+        <mxCell id="R__kZL5bwLptOCPEKLpg-1" value="实例ID不存在于&lt;br&gt;业务场景变更实例记录中，&lt;br&gt;直接返回" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="pR2Jg7A8279A-SpSWOsh-1">
+          <mxGeometry x="350" y="380" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="R__kZL5bwLptOCPEKLpg-2" value="返回" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="pR2Jg7A8279A-SpSWOsh-1">
           <mxGeometry relative="1" as="geometry">
@@ -858,14 +858,8 @@
         <mxCell id="R__kZL5bwLptOCPEKLpg-3" value="本地场景实例不为空" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="pR2Jg7A8279A-SpSWOsh-1">
           <mxGeometry x="360" y="480" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="R__kZL5bwLptOCPEKLpg-4" value="实例版本大于&lt;br&gt;变更记录实例版本" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="pR2Jg7A8279A-SpSWOsh-1">
-          <mxGeometry x="370" y="540" width="110" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="R__kZL5bwLptOCPEKLpg-5" value="返回" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" edge="1" parent="pR2Jg7A8279A-SpSWOsh-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340" y="580" as="sourcePoint" />
-            <mxPoint x="190" y="580" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="R__kZL5bwLptOCPEKLpg-6" value="实例ID存在于&lt;br&gt;业务场景变更实例记录中&lt;br&gt;实例版本【大于】&lt;br&gt;变更记录实例版本" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="pR2Jg7A8279A-SpSWOsh-1">
+          <mxGeometry x="355" y="500" width="150" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
