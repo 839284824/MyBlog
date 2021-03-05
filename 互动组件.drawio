@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-05T08:33:47.547Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="YbJLhLms__-pEfnjM5rv" version="14.4.4" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2021-03-05T08:37:15.453Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="Fa9TaJfU5JoEgW_pyeD3" version="14.4.4" type="github" pages="6">
   <diagram id="Iy33KvT-7kDo7lMHrZao" name="时序图-现状">
     <mxGraphModel dx="932" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -944,6 +944,9 @@
             <mxPoint x="170" y="210" as="sourcePoint" />
             <mxPoint x="220" y="160" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="QwWkaYVPKSXSJ_w0qo0G-15" value="同步&lt;br&gt;缓存" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontColor=#5C5C5C;" vertex="1" parent="-kEhUpFFiAstAHdJVe2p-1">
+          <mxGeometry x="405" y="210" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
