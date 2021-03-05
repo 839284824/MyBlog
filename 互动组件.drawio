@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-05T02:52:50.227Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="v9auqeHIDSv9SPQdzGEY" version="14.4.4" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2021-03-05T03:09:58.983Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="BwdGyMQaCx6RdB4-Pda7" version="14.4.4" type="github" pages="6">
   <diagram id="Iy33KvT-7kDo7lMHrZao" name="时序图-现状">
     <mxGraphModel dx="932" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -905,6 +905,15 @@
       <root>
         <mxCell id="-kEhUpFFiAstAHdJVe2p-0" />
         <mxCell id="-kEhUpFFiAstAHdJVe2p-1" parent="-kEhUpFFiAstAHdJVe2p-0" />
+        <mxCell id="-kEhUpFFiAstAHdJVe2p-2" value="本地cache" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="-kEhUpFFiAstAHdJVe2p-1">
+          <mxGeometry x="294" y="160" width="276" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-kEhUpFFiAstAHdJVe2p-3" value="RDB" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="-kEhUpFFiAstAHdJVe2p-1">
+          <mxGeometry x="294" y="240" width="276" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-kEhUpFFiAstAHdJVe2p-4" value="DB" style="rounded=0;whiteSpace=wrap;html=1;sketch=0;strokeColor=#006658;fillColor=#21C0A5;fontColor=#5C5C5C;" vertex="1" parent="-kEhUpFFiAstAHdJVe2p-1">
+          <mxGeometry x="294" y="320" width="276" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
