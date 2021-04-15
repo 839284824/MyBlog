@@ -1,1 +1,43 @@
-<mxfile host="app.diagrams.net" modified="2021-04-15T07:30:49.083Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" version="14.5.3" etag="9iaFMLFOzktjY7Otc98a" type="github"><diagram id="qAGWe2JG3u45VfzRY0-S">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-04-15T08:00:45.843Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="uKslZvjc4FUEGq4Pm_gH" version="14.5.3" type="github">
+  <diagram id="qAGWe2JG3u45VfzRY0-S" name="投票信息初始化">
+    <mxGraphModel dx="903" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ng56FaJX8ZQflosN4sjV-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ng56FaJX8ZQflosN4sjV-1" target="ng56FaJX8ZQflosN4sjV-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ng56FaJX8ZQflosN4sjV-1" value="初始化" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="70" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ng56FaJX8ZQflosN4sjV-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ng56FaJX8ZQflosN4sjV-2" target="ng56FaJX8ZQflosN4sjV-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ng56FaJX8ZQflosN4sjV-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ng56FaJX8ZQflosN4sjV-2" target="ng56FaJX8ZQflosN4sjV-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ng56FaJX8ZQflosN4sjV-2" value="本地缓存（1S）&lt;br&gt;load投票信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="140" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ng56FaJX8ZQflosN4sjV-4" value="DB投票信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="140" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ng56FaJX8ZQflosN4sjV-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ng56FaJX8ZQflosN4sjV-6" target="ng56FaJX8ZQflosN4sjV-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ng56FaJX8ZQflosN4sjV-6" value="RDB查询用户投票" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="220" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ng56FaJX8ZQflosN4sjV-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ng56FaJX8ZQflosN4sjV-8" target="ng56FaJX8ZQflosN4sjV-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ng56FaJX8ZQflosN4sjV-8" value="聚合数据" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="290" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ng56FaJX8ZQflosN4sjV-10" value="返回" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="370" width="130" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
