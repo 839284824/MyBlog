@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-16T03:25:35.708Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="Mh8Yk1g1lRb8Cf82iB1f" version="14.5.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-04-16T03:25:52.559Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36" etag="Dyu6MJQW9zP_HhvvDvTq" version="14.5.3" type="github" pages="2">
   <diagram id="qAGWe2JG3u45VfzRY0-S" name="投票信息初始化">
     <mxGraphModel dx="903" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -40,7 +40,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="_nCKrIcKyWGUVSyVpInk" name="Page-2">
+  <diagram id="_nCKrIcKyWGUVSyVpInk" name="投票次数">
     <mxGraphModel dx="903" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="OMJl2g0sG5y536sFlKRM-0" />
