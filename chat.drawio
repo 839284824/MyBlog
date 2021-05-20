@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-05-20T03:59:08.970Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="WTGh8yfaUqx_OETbEEbf" version="14.6.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-20T03:59:36.897Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="Nt-fzq2xL_vPRehobJl1" version="14.6.3" type="github">
   <diagram id="yO-3s7PbOpBTvXI-3NU2" name="聊天上行">
     <mxGraphModel dx="932" dy="1669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -57,6 +57,12 @@
         </mxCell>
         <mxCell id="6jfxAzRchgulwAgQDOWV-21" value="发送新总线消息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="760" y="240" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6jfxAzRchgulwAgQDOWV-22" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="860" y="-40" as="sourcePoint" />
+            <mxPoint x="860.5" y="36" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
