@@ -1,1 +1,43 @@
-<mxfile host="app.diagrams.net" modified="2021-05-20T02:58:33.262Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" version="14.6.3" etag="_0qgD85hMntyQNYaxz8A" type="github"><diagram id="yO-3s7PbOpBTvXI-3NU2">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-20T03:18:55.935Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="QfQtu2BndXc9pFN_3kJC" version="14.6.3" type="github">
+  <diagram id="yO-3s7PbOpBTvXI-3NU2" name="聊天上行">
+    <mxGraphModel dx="932" dy="1669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6jfxAzRchgulwAgQDOWV-1" value="聊天入口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="279" y="40" width="281" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6jfxAzRchgulwAgQDOWV-2" value="内容长度校验" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="80" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6jfxAzRchgulwAgQDOWV-3" value="限流" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="120" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6jfxAzRchgulwAgQDOWV-5" value="用户信息、VIP信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="160" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6jfxAzRchgulwAgQDOWV-9" value="mtop" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="279" y="-80" width="281" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6jfxAzRchgulwAgQDOWV-10" value="禁言" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="200" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6jfxAzRchgulwAgQDOWV-11" value="词库过滤" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="240" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6jfxAzRchgulwAgQDOWV-12" value="频度控制" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="280" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6jfxAzRchgulwAgQDOWV-13" value="审核" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="320" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6jfxAzRchgulwAgQDOWV-14" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="6jfxAzRchgulwAgQDOWV-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="-10" as="sourcePoint" />
+            <mxPoint x="420" y="36" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
