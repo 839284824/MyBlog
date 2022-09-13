@@ -1,0 +1,284 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>【Arthas】实战 | 人间烟火气，最抚凡人心</title>
+<link rel="shortcut icon" href="https://839284824.github.io/MyBlog//favicon.ico?v=1663061874705">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://839284824.github.io/MyBlog//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="【Arthas】实战 | 人间烟火气，最抚凡人心 - Atom Feed" href="https://839284824.github.io/MyBlog//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="Arthas是什么？
+Arthas 是Alibaba开源的Java诊断工具
+
+https://github.com/alibaba/arthas/blob/master/README_CN.md
+https://arthas.aliyun...." />
+    <meta name="keywords" content="实战,Java" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://839284824.github.io/MyBlog/">
+  <img class="avatar" src="https://839284824.github.io/MyBlog//images/avatar.png?v=1663061874705" alt="">
+  </a>
+  <h1 class="site-title">
+    人间烟火气，最抚凡人心
+  </h1>
+  <p class="site-description">
+    不积跬步，无以至千里；不积小流，无以成江海
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://839284824.github.io/MyBlog/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/tag/_8PfblK5W" class="menu">
+          实战
+        </a>
+      
+    
+      
+        <a href="/tag/6tMiNm72X/" class="menu">
+          Java☕️
+        </a>
+      
+    
+      
+        <a href="/tag/7zcBWN_iL" class="menu">
+          笔记📒
+        </a>
+      
+    
+      
+        <a href="/tag/RPS1axIpY" class="menu">
+          双十一
+        </a>
+      
+    
+      
+        <a href="/tag/y3qEGXD5O" class="menu">
+          工具
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              【Arthas】实战
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-03-18
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+                <a href="https://839284824.github.io/MyBlog/tag/_8PfblK5W/" class="post-tag">
+                  # 实战
+                </a>
+              
+                <a href="https://839284824.github.io/MyBlog/tag/6tMiNm72X/" class="post-tag">
+                  # Java
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://839284824.github.io/MyBlog//post-images/arthas.png" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="arthas是什么">Arthas是什么？</h1>
+<p>Arthas 是Alibaba开源的Java诊断工具</p>
+<ul>
+<li>https://github.com/alibaba/arthas/blob/master/README_CN.md</li>
+<li>https://arthas.aliyun.com/doc/logger.html</li>
+</ul>
+<h1 id="arthas可以解决哪些问题">Arthas可以解决哪些问题？</h1>
+<ul>
+<li>这个类从哪个 jar 包加载的？为什么会报各种类相关的 Exception？</li>
+<li>我改的代码为什么没有执行到？难道是我没 commit？分支搞错了？</li>
+<li>遇到问题无法在线上 debug，难道只能通过加日志再重新发布吗？</li>
+<li>线上遇到某个用户的数据处理有问题，但线上同样无法 debug，线下无法重现！</li>
+<li>是否有一个全局视角来查看系统的运行状况？</li>
+<li>有什么办法可以监控到JVM的实时运行状态？</li>
+<li>怎么快速定位应用的热点，生成火焰图？</li>
+<li>怎样直接从JVM内查找某个类的实例？</li>
+</ul>
+<h1 id="arthas插件使用">Arthas插件使用</h1>
+<p>介绍Arthas使用之前，先介绍一个IDEA插件：<strong>arthas idea</strong><br>
+在想诊断的方法上，右键<br>
+<img src="https://839284824.github.io/MyBlog//post-images/1648027477768.jpg" alt="" loading="lazy"></p>
+<h1 id="artha常用命令使用">Artha常用命令使用</h1>
+<p><code>dashboard</code> 当前系统的实时数据面板信息。具体信息参考</p>
+<ul>
+<li>https://arthas.aliyun.com/doc/dashboard</li>
+</ul>
+<p><code>thread -n 3</code> 一目了然的了解系统的状态，哪些线程比较占cpu？他们到底在做什么？<br>
+<img src="https://839284824.github.io/MyBlog//post-images/1648089179911.jpg" alt="" loading="lazy"></p>
+<p><code>jvm</code>  查看当前JVM信息<br>
+<code>jad javax.servlet.Servlet</code>   反编译类<br>
+<code>memory</code> 查看内存信息<br>
+<code>logger</code> 查看日志信息<br>
+<code>sc</code>  查看JVM已加载的类信息<br>
+<code>vmtool</code> vmtool 利用JVMTI接口，实现查询内存对象，强制GC等功能。<strong>神特性</strong></p>
+<blockquote>
+<p>$ vmtool --action getInstances --className java.lang.String --limit 10<br>
+@String[][<br>
+@String[com/taobao/arthas/core/shell/session/Session],<br>
+@String[com.taobao.arthas.core.shell.session.Session],<br>
+@String[com/taobao/arthas/core/shell/session/Session],<br>
+@String[com/taobao/arthas/core/shell/session/Session],<br>
+@String[com/taobao/arthas/core/shell/session/Session.class],<br>
+@String[com/taobao/arthas/core/shell/session/Session.class],<br>
+@String[com/taobao/arthas/core/shell/session/Session.class],<br>
+@String[com/],<br>
+@String[java/util/concurrent/ConcurrentHashMap$ValueIterator],<br>
+@String[java/util/concurrent/locks/LockSupport],<br>
+]</p>
+</blockquote>
+<p><code>monitor</code> 方法执行监控,可以查看方法的成功率和RT信息。<strong>非常有用</strong><br>
+<img src="https://839284824.github.io/MyBlog//post-images/1648092240478.jpg" alt="" loading="lazy"></p>
+<p><code>watch</code> 函数执行数据观测。可以看到方法的执行时的参数、返回值、是否异常等信息</p>
+<ul>
+<li>https://arthas.aliyun.com/doc/watch.html</li>
+</ul>
+<p>特殊用法：</p>
+<ul>
+<li>https://github.com/alibaba/arthas/issues/71<br>
+按照参数过滤<br>
+<code>watch com.alibaba.youku.search.service.service.impl.SearchServiceImpl query '{params,returnObj,throwExp}' 'params[0].get(&quot;appScene&quot;).equals(&quot;mobile_multi&quot;)'  -n 5  -x 3 -v</code></li>
+</ul>
+<p><code>trace</code>  观察方法执行的时候哪个子调用比较慢。<strong>非常有用</strong></p>
+<ul>
+<li>https://arthas.aliyun.com/doc/trace.html#id1</li>
+</ul>
+<p><code>stack</code> 输出当前方法被调用的调用路径</p>
+<ul>
+<li>https://arthas.aliyun.com/doc/stack.html</li>
+</ul>
+<p><code>Time Tunnel(tt) </code> 记录方法调用信息，支持事后查看方法调用的参数，返回值，抛出的异常等信息，仿佛穿越时空隧道回到调用现场一般。记录现场，并支持回放功能<strong>非常有用</strong></p>
+<ul>
+<li>https://arthas.aliyun.com/doc/tt.html</li>
+</ul>
+<p><code>Profiler</code> 生成火焰图.支持的事件用 list 查看,用--event指定不同的事件</p>
+<ul>
+<li>https://arthas.aliyun.com/doc/profiler.html</li>
+</ul>
+<h1 id="经典案例">经典案例</h1>
+<ul>
+<li>https://github.com/alibaba/arthas/issues/1823</li>
+<li>https://www.jianshu.com/p/24e817e47a84</li>
+<li>https://github.com/alibaba/arthas/issues/1709</li>
+<li>https://github.com/alibaba/arthas/issues/1538</li>
+<li>https://github.com/alibaba/arthas/issues/1202</li>
+<li>http://kail.xyz/Troubleshooting/docs/Arthas/Case/Slow-Start/</li>
+<li>https://github.com/Ax1an/arthas-case/blob/main/%E4%BD%BF%E7%94%A8%20SkyWalking%20%26%20Arthas%20%E4%BC%98%E5%8C%96%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%80%A7%E8%83%BD.md</li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#arthas%E6%98%AF%E4%BB%80%E4%B9%88">Arthas是什么？</a></li>
+<li><a href="#arthas%E5%8F%AF%E4%BB%A5%E8%A7%A3%E5%86%B3%E5%93%AA%E4%BA%9B%E9%97%AE%E9%A2%98">Arthas可以解决哪些问题？</a></li>
+<li><a href="#arthas%E6%8F%92%E4%BB%B6%E4%BD%BF%E7%94%A8">Arthas插件使用</a></li>
+<li><a href="#artha%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8">Artha常用命令使用</a></li>
+<li><a href="#%E7%BB%8F%E5%85%B8%E6%A1%88%E4%BE%8B">经典案例</a></li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://839284824.github.io/MyBlog/post/study/">
+              <h3 class="post-title">
+                【线程池】
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://839284824.github.io/MyBlog//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

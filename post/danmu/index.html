@@ -1,0 +1,239 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>双十一系列-互动玩法之弹幕 | 人间烟火气，最抚凡人心</title>
+<link rel="shortcut icon" href="https://839284824.github.io/MyBlog//favicon.ico?v=1663061874705">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://839284824.github.io/MyBlog//styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="双十一系列-互动玩法之弹幕 | 人间烟火气，最抚凡人心 - Atom Feed" href="https://839284824.github.io/MyBlog//atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="概述
+互动作为直播中一个非常重要的部分，具有玩法多、流量大、流量不稳定等诸多特点。现对工作中曾经涉及到的玩法做一个总结，温故而知新。
+主要玩法
+主要玩法如下：聊天（弹幕）、送礼、点赞、红包雨、投票、抽奖等。
+弹幕
+聊天作为直播互动的基础玩法..." />
+    <meta name="keywords" content="实战" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://839284824.github.io/MyBlog/">
+  <img class="avatar" src="https://839284824.github.io/MyBlog//images/avatar.png?v=1663061874705" alt="">
+  </a>
+  <h1 class="site-title">
+    人间烟火气，最抚凡人心
+  </h1>
+  <p class="site-description">
+    不积跬步，无以至千里；不积小流，无以成江海
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://839284824.github.io/MyBlog/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/tag/_8PfblK5W" class="menu">
+          实战
+        </a>
+      
+    
+      
+        <a href="/tag/6tMiNm72X/" class="menu">
+          Java☕️
+        </a>
+      
+    
+      
+        <a href="/tag/7zcBWN_iL" class="menu">
+          笔记📒
+        </a>
+      
+    
+      
+        <a href="/tag/RPS1axIpY" class="menu">
+          双十一
+        </a>
+      
+    
+      
+        <a href="/tag/y3qEGXD5O" class="menu">
+          工具
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              双十一系列-互动玩法之弹幕
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-03-24
+              </span>
+              <span>
+                4 min read
+              </span>
+              
+                <a href="https://839284824.github.io/MyBlog/tag/_8PfblK5W/" class="post-tag">
+                  # 实战
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="概述">概述</h1>
+<p>互动作为直播中一个非常重要的部分，具有玩法多、流量大、流量不稳定等诸多特点。现对工作中曾经涉及到的玩法做一个总结，温故而知新。</p>
+<h1 id="主要玩法">主要玩法</h1>
+<p>主要玩法如下：聊天（弹幕）、送礼、点赞、红包雨、投票、抽奖等。</p>
+<h2 id="弹幕">弹幕</h2>
+<p>聊天作为直播互动的基础玩法之一，实时性高，审核严格。可以很好的增加直播间的氛围，增加用户和主播之间的互动率，增加用户的留存率。同时也是互动中非常重要的一个玩法。尤其是双十一天猫晚会等大型活动，接口顺势流量可能瞬间达到峰值（比如开播），或者稳定在某一个水平（非高峰期）。如此大的不稳定流量冲击下，如何保证服务的整体稳定性，非常考验整体的设计。本文将从以下的几个方面来讲述我们的整体设计。</p>
+<h3 id="整体架构">整体架构</h3>
+<figure data-type="image" tabindex="1"><img src="https://839284824.github.io/MyBlog//post-images/1663038529826.png" alt="" loading="lazy"></figure>
+<h3 id="弹幕玩法">弹幕玩法</h3>
+<p>下面主要看以下在弹幕下的主要玩法</p>
+<h3 id="聊天历史">聊天历史</h3>
+<p>场景：直播间开播或者用户点击直播的时候，大量用户同时进入直播间，拉取直播间场次的聊天历史显示，增加直播间的氛围。<br>
+特点：热点数据、瞬时流量非常大（QPS 10W+）<br>
+针对聊天历史的流量特点，我们采用的方案是<strong>数据预热</strong>+<strong>二级缓存</strong>+<strong>限流</strong><br>
+<img src="https://839284824.github.io/MyBlog//post-images/1663041122544.png" alt="" loading="lazy"><br>
+因为数据流量非常大的缘故，如果数据直接从RDB中拉取，RDB可能会存在单点问题。所以在服务层增加本地缓存作为二级缓存，在流量尖刺出现之前进行数据预热，将RDB数据同步到服务端的本地缓存中。这样可以将流量尖刺的压力分散到服务端的集群上。这样打到RDB的瞬时流量不会超过集群机器数（由集群热点预热数据的失效时间决定）<br>
+限流：在接口层面进行限流，达到阈值后直接放弃请求。</p>
+<h3 id="发送弹幕">发送弹幕</h3>
+<p>整个弹幕的系统的链路非常长，而且相关的服务依赖非常多，其中任何一个环境的失败都有可能导致整体服务的不可用，而弹幕又是非常高敏的玩法，非常影响用户体验。<br>
+特点：链路长，相关依赖服务多，流量尖刺（热点话题）<br>
+<img src="https://839284824.github.io/MyBlog//post-images/1663038487053.png" alt="" loading="lazy"><br>
+针对发弹幕的流量特点，我们采用的方案主要有如下几类。</p>
+<p><em><strong>限流</strong></em><br>
+多个维度的限流方案：<br>
+接口限流：接口层面的总限流。<br>
+业务场景限流：按照业务biz限流<br>
+直播间限流：按照业务下直播间进行限流<br>
+整体限流架构图如下：<br>
+<img src="https://839284824.github.io/MyBlog//post-images/1663057179575.png" alt="" loading="lazy"><br>
+多维度多层次的限流方案可以很好的增加服务的稳定性。既能解决平稳流量的问题，也能防止出现流量尖刺。<br>
+比如说某个直播间突然火爆了，我们可以调大当前直播间的限流，同时响应的调小其他biz的限流阈值来重点保障黑马直播间。<br>
+限流阈值的设定除了很大的依赖于历史数据、接口监控的数据外，还依赖于强依赖的下游服务的可承受能力。<br>
+比如说弹幕强依赖于安审系统，如果安审系统QPS限流阈值是200，我们设置2w的限流阈值明显就不合适了。</p>
+<p><em><strong>服务治理</strong></em><br>
+在整个的弹幕过程中，前后依赖的服务大概有十多个。针对这些三方应用我们采用了分而治之的策略。<br>
+比如直播服务、安审服务、消息服务，属于<strong>强依赖服务</strong>，服务失败整个弹幕就失败了。对于这些服务我们需要做好预热、限流、熔断、降级、重试等策略。<br>
+比如用户服务、勋章服务、会员服务等，属于<strong>弱依赖服务</strong>，服务失败并不会影响弹幕的链路。对于这些服务，我们需要做好数据的兜底。比如用户服务失败了，我们可以使用兜底的用户发弹幕。</p>
+<p><em><strong>消息广播</strong></em><br>
+A发了一条弹幕,是如何让直播间B，C，D都收到了消息呢？</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#%E6%A6%82%E8%BF%B0">概述</a></li>
+<li><a href="#%E4%B8%BB%E8%A6%81%E7%8E%A9%E6%B3%95">主要玩法</a>
+<ul>
+<li><a href="#%E5%BC%B9%E5%B9%95">弹幕</a>
+<ul>
+<li><a href="#%E6%95%B4%E4%BD%93%E6%9E%B6%E6%9E%84">整体架构</a></li>
+<li><a href="#%E5%BC%B9%E5%B9%95%E7%8E%A9%E6%B3%95">弹幕玩法</a></li>
+<li><a href="#%E8%81%8A%E5%A4%A9%E5%8E%86%E5%8F%B2">聊天历史</a></li>
+<li><a href="#%E5%8F%91%E9%80%81%E5%BC%B9%E5%B9%95">发送弹幕</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://839284824.github.io/MyBlog/post/arthas/">
+              <h3 class="post-title">
+                【Arthas】实战
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://839284824.github.io/MyBlog//atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
